@@ -1,6 +1,6 @@
 import type { Citation, NewCitation, UpdateCitation } from '../types';
 
-const BASE_URL = 'http://localhost:3000/citations';
+const BASE_URL = 'https://thesis-buddy-api.onrender.com/citations';
 
 export const getCitations = async (): Promise<Citation[]> => {
   const res = await fetch(BASE_URL);
