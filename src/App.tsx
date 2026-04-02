@@ -21,7 +21,6 @@ export default function App() {
   return (
     <div className="min-h-screen relative font-sans text-gray-800">
       
-      {/* Imagem de Fundo da Biblioteca Desfocada */}
       <div 
         className="fixed inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2000&auto=format&fit=crop')" }}
@@ -31,7 +30,6 @@ export default function App() {
 
       <main className="relative z-10 max-w-4xl mx-auto p-6 pt-12">
         
-        {/* Título invisível para acessibilidade (Leitores de tela) */}
         <h1 className="sr-only">Thesis Buddy - Seu organizador de fichamentos acadêmicos</h1>
 
         {error && (
@@ -40,7 +38,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Formulário (que agora já contém o logo no topo) */}
         <CitationForm onSubmit={add} />
 
         <section className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-white/40 min-h-[400px]">

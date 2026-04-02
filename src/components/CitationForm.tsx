@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import type { NewCitation } from '../types';
 import { User, Compass, Quote, Lightbulb, Check } from 'lucide-react';
-// Importando o logo que você salvou na pasta assets
 import logoImg from '../assets/logo.png';
 
 interface Props {
@@ -30,12 +29,10 @@ export function CitationForm({ onSubmit }: Props) {
   return (
     <form onSubmit={handleSubmit} className="bg-white/95 backdrop-blur-sm p-8 md:p-10 rounded-3xl shadow-xl mb-10 border border-white/40">
       
-      {/* O Logo dentro do quadro do formulário */}
       <div className="flex justify-center border-b border-gray-200/80 pb-6 mb-8">
         <img 
           src={logoImg} 
           alt="Logo Thesis Buddy" 
-          // O mix-blend-multiply faz a textura de papel do logo se fundir com o branco do formulário!
           className="h-32 md:h-40 object-contain mix-blend-multiply opacity-95" 
         />
       </div>
